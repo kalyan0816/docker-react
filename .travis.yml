@@ -5,4 +5,4 @@ services:
 before_install:
   - docker build -t kalyancherukuru/docker-react -f Dockerfile.dev .
 scripts:
-  - docker run kalyancherukuru/docker-react -- --coverage
+  - docker run kalyancherukuru/docker-react npm run test -- --coverage
